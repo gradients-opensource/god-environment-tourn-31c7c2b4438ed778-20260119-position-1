@@ -1,7 +1,8 @@
 """
-Notes/TODO:
-- Continue testing different game types
-- Gin Rummy is slow but working
+Notes:
+With the Affine GAME environment when you reset to start a new game you have to choose an 'opponent' type to train against.
+Your two options are 'random' and 'mcts'.
+Miners are free to choose which opponent type they train against. 
 """
 
 def rollout_first_prompt_and_completion(prompts: list[str], trainer, max_turns: int = 30) -> dict[str, list]:
